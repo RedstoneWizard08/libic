@@ -12,6 +12,13 @@ pub struct MinecraftVersion {
 
 #[derive(Serialize, Deserialize, Debug)]
 #[serde(rename_all = "camelCase")]
+pub struct ShortVersion {
+    pub id: String,
+    pub r#type: String,
+}
+
+#[derive(Serialize, Deserialize, Debug)]
+#[serde(rename_all = "camelCase")]
 pub struct MinecraftLatestVersion {
     pub release: String,
     pub snapshot: String,

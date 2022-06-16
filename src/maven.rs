@@ -3,16 +3,16 @@ use serde::{Deserialize, Serialize};
 #[derive(Serialize, Deserialize, Debug)]
 #[serde(rename_all = "camelCase")]
 pub struct VersionInfo {
-    version: Vec<String>,
+    pub version: Vec<String>,
 }
 
 #[derive(Serialize, Deserialize, Debug)]
 #[serde(rename_all = "camelCase")]
 pub struct MavenVersionInfo {
-    latest: String,
-    release: String,
-    versions: VersionInfo,
-    last_updated: String,
+    pub latest: String,
+    pub release: String,
+    pub versions: VersionInfo,
+    pub last_updated: String,
 }
 
 #[derive(Serialize, Deserialize, Debug)]
